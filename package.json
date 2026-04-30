@@ -1,0 +1,16 @@
+{
+  "name": "scalervoices",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Persona-based AI chatbot — converse with Anshuman Singh, Abhimanyu Saxena, and Kshitij Mishra.",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client install --include=dev && npm --prefix client run build && npm --prefix server install --omit=dev",
+    "start": "npm --prefix server start"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

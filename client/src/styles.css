@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply font-sans bg-ink-950 text-ink-100 antialiased;
+  background-image:
+    radial-gradient(at 12% 8%, rgba(124, 135, 176, 0.18) 0px, transparent 55%),
+    radial-gradient(at 88% 92%, rgba(67, 77, 118, 0.22) 0px, transparent 55%);
+}
+
+.persona-amber {
+  --accent: 251 191 36;
+  --accent-strong: 245 158 11;
+}
+.persona-violet {
+  --accent: 167 139 250;
+  --accent-strong: 139 92 246;
+}
+.persona-emerald {
+  --accent: 110 231 183;
+  --accent-strong: 16 185 129;
+}
+
+.accent-bg {
+  background-color: rgb(var(--accent) / 0.12);
+}
+.accent-ring {
+  box-shadow: 0 0 0 1px rgb(var(--accent) / 0.45);
+}
+.accent-text {
+  color: rgb(var(--accent));
+}
+.accent-strong-bg {
+  background-color: rgb(var(--accent-strong));
+}
+.accent-strong-text {
+  color: rgb(var(--accent-strong));
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(169, 178, 207, 0.25) transparent;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(169, 178, 207, 0.25);
+  border-radius: 6px;
+}
